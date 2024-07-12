@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        .container{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+            font-size: larger;
+        }
+        .grid2{
+            gap: 10px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        .box1{
+            background-color: #969601;
+            height: 50vh;
+            border: 1px solid black;
+        }
+        .box{
+            background-color: red;
+            height: 100vh;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .small{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .box3, .box4{
+            width: 50%;
+            background-color: aqua;
+            height: 50vh;
+            border: 1px solid black;
+        }
+        @media screen and (max-width: 576px) {
+            .container{
+                display: block;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .box, .box1{
+                width: 85vh;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+            .small{
+                display: block;
+                gap: 10px;
+            }
+            .box3, .box4{
+                width: 85vh;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <div class="box"><h1>1</h1></div>
+        </div>
+        <div class="grid2">
+            <div class="box1"><h1>2</h1></div>
+            <div class="small">
+                <div class="box3"><h1>3</h1></div>
+                <div class="box4"><h1>4</h1></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
